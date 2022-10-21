@@ -1,0 +1,32 @@
+{
+  "name": "@hexlet/code",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Mind Games",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d13ch/frontend-project-44.git"
+  },
+  "keywords": [
+    "project",
+    "hexlet"
+  ],
+  "author": "Dmitrii Chernov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d13ch/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/d13ch/frontend-project-44#readme",
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
