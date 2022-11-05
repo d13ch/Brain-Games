@@ -8,4 +8,7 @@
 [![asciicast](https://asciinema.org/a/f9QwnMiqIv6DqPatc29EzkyEA.svg)](https://asciinema.org/a/f9QwnMiqIv6DqPatc29EzkyEA)
 
 ## How it works
-[![asciicast](https://asciinema.org/a/KstPAwNstsfMtEwSbEYZJnjSX.svg)](https://asciinema.org/a/KstPAwNstsfMtEwSbEYZJnjSX)
+# Even
+[![asciicast](https://asciinema.org/a/hhaRedTnyKMf143U0VzoDr2ix.svg)](https://asciinema.org/a/hhaRedTnyKMf143U0VzoDr2ix)
+# Calculator
+[![asciicast](https://asciinema.org/a/pE5qAQHj1Mejc7c0wo2oievtQ.svg)](https://asciinema.org/a/pE5qAQHj1Mejc7c0wo2oievtQ)
