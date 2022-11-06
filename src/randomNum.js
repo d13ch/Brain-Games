@@ -1,5 +1,5 @@
-const randomNum = (multiplier) => {
-  const num = Math.floor(Math.random() * multiplier);
+const randomNum = (range, beginOfRange = 0) => {
+  const num = Math.floor(Math.random() * range) + beginOfRange;
   return num;
 };
 

@@ -5,8 +5,8 @@ const rules = () => {
 };
 
 const gameData = () => {
-  const num1 = randomNum(10) + 1;
-  const num2 = randomNum(10) + 1;
+  const num1 = randomNum(10, 1);
+  const num2 = randomNum(10, 1);
   const operators = ['+', '-', '*'];
   const opIndex = randomNum(operators.length);
   const operator = operators[opIndex];

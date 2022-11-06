@@ -5,7 +5,7 @@ const rules = () => {
 };
 
 const gameData = () => {
-  const num = randomNum(100) + 1;
+  const num = randomNum(100, 1);
   let result = '';
 
   if (num % 2 === 0) {

@@ -5,8 +5,8 @@ const rules = () => {
 };
 
 const gameData = () => {
-  const num1 = randomNum(10) + 1;
-  const num2 = randomNum(10) + 1;
+  const num1 = randomNum(10, 1);
+  const num2 = randomNum(10, 1);
   const task = `${num1} ${num2}`;
 
   let min = num1;
@@ -23,7 +23,7 @@ const gameData = () => {
   if (max % min === 0) {
     result = min;
   } else {
-    for (let i = Math.floor(min / 2); i >= 1 / 2; i -= 1) {
+    for (let i = Math.floor(min / 2); i >= 2; i -= 1) {
       if (min % i === 0 && max % i === 0) {
         result = i;
         break;

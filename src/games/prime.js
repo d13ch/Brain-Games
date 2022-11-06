@@ -5,7 +5,7 @@ const rules = () => {
 };
 
 const gameData = () => {
-  const num = randomNum(98) + 2;
+  const num = randomNum(98, 2);
   let result = '';
 
   for (let i = Math.floor(num / 2); i >= 2; i -= 1) {

@@ -9,8 +9,8 @@ const gameData = () => {
 
   const minItems = 4;
   const maxItems = 10;
-  const itemsOfProgression = randomNum(maxItems - minItems) + minItems;
-  const progressionStep = randomNum(9) + 1;
+  const itemsOfProgression = randomNum(maxItems - minItems, minItems);
+  const progressionStep = randomNum(9, 1);
 
   for (let i = 1; i <= itemsOfProgression; i += 1) {
     progression.push(progression[i - 1] + progressionStep);
