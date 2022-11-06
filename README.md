@@ -8,7 +8,9 @@
 [![asciicast](https://asciinema.org/a/f9QwnMiqIv6DqPatc29EzkyEA.svg)](https://asciinema.org/a/f9QwnMiqIv6DqPatc29EzkyEA)
 
 ## How it works
-# Even
+### Even
 [![asciicast](https://asciinema.org/a/hhaRedTnyKMf143U0VzoDr2ix.svg)](https://asciinema.org/a/hhaRedTnyKMf143U0VzoDr2ix)
-# Calculator
+### Calculator
 [![asciicast](https://asciinema.org/a/pE5qAQHj1Mejc7c0wo2oievtQ.svg)](https://asciinema.org/a/pE5qAQHj1Mejc7c0wo2oievtQ)
+### GCD
+[![asciicast](https://asciinema.org/a/ZzTNsOAyx2ZGGnIf3KC24Y6pB.svg)](https://asciinema.org/a/ZzTNsOAyx2ZGGnIf3KC24Y6pB)
