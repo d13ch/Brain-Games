@@ -8,11 +8,12 @@ const gameData = () => {
   const num = randomNum(98, 2);
   let result = '';
 
-  for (let i = Math.floor(num / 2); i >= 1; i -= 1) {
-    if (num <= 3) {
-      result = 'yes';
-      break;
-    } else if (num % i === 0) {
+  if (num <= 3) {
+    result = 'yes';
+  }
+
+  for (let i = Math.floor(num / 2); i >= 2; i -= 1) {
+    if (num % i === 0) {
       result = 'no';
       break;
     } else result = 'yes';
