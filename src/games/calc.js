@@ -1,13 +1,14 @@
+import randomNum from '../randomNum.js';
+
 const rules = () => {
   console.log('What is the result of the expression?');
 };
 
 const gameData = () => {
-  const num1 = Math.floor(Math.random() * 10) + 1;
-  const num2 = Math.floor(Math.random() * 10) + 1;
-
+  const num1 = randomNum(10) + 1;
+  const num2 = randomNum(10) + 1;
   const operators = ['+', '-', '*'];
-  const opIndex = Math.floor(Math.random() * operators.length);
+  const opIndex = randomNum(operators.length);
   const operator = operators[opIndex];
 
   const task = `${num1} ${operator} ${num2}`;

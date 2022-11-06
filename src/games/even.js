@@ -1,9 +1,11 @@
+import randomNum from '../randomNum.js';
+
 const rules = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 };
 
 const gameData = () => {
-  const num = Math.floor(Math.random() * 100) + 1;
+  const num = randomNum(100) + 1;
   let result = '';
 
   if (num % 2 === 0) {
