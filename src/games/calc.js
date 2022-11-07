@@ -1,3 +1,4 @@
+import logic from '../index.js';
 import randomNum from '../randomNum.js';
 
 const rules = () => {
@@ -30,4 +31,4 @@ const gameData = () => {
   return [task, result];
 };
 
-export { rules, gameData };
+export default () => logic(rules, gameData);
