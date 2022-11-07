@@ -6,8 +6,8 @@
 
 ## Instalation
 To install package type
-`npm link`
-The comand may reqire **sudo**
+`npm link`.
+The comand may require **sudo**
 [![asciicast](https://asciinema.org/a/f9QwnMiqIv6DqPatc29EzkyEA.svg)](https://asciinema.org/a/f9QwnMiqIv6DqPatc29EzkyEA)
 
 ## How it works
