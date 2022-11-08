@@ -8,16 +8,9 @@ const gameData = () => {
   const task = `${num1} ${num2}`;
   let result = 1;
   const gcd = (firstNum, secondNum) => {
-    let min = firstNum;
-    let max = secondNum;
-    if (firstNum > secondNum) {
-      min = secondNum;
-      max = firstNum;
-    }
-    if (firstNum === secondNum) {
-      result = firstNum;
-    }
-    if (max % min === 0) {
+    const min = firstNum > secondNum ? secondNum : firstNum;
+    const max = firstNum > secondNum ? firstNum : secondNum;
+    if (max % min === 0 || firstNum === secondNum) {
       result = min;
     } else {
       for (let i = Math.floor(min / 2); i >= 2; i -= 1) {
