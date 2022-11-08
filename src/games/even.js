@@ -6,9 +6,16 @@ const gameData = () => {
   const num = randomNum(100, 1);
   let result = '';
 
-  if (num % 2 === 0) {
+  const isEven = (numFromTask) => {
+    if (numFromTask % 2 === 0) {
+      return true;
+    } return false;
+  };
+
+  if (isEven(num)) {
     result = 'yes';
   } else result = 'no';
+
   return [rules, num, result];
 };
 

@@ -1,25 +1,28 @@
 import logic from '../index.js';
 import randomNum from '../randomNum.js';
 
-const rules = () => {
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-};
-
 const gameData = () => {
+  const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const num = randomNum(98, 2);
   let result = '';
 
-  if (num <= 3) {
-    result = 'yes';
-  }
+  const isPrime = (numFromTask) => {
+    if (numFromTask <= 3) {
+      return true;
+    }
 
-  for (let i = Math.floor(num / 2); i >= 2; i -= 1) {
-    if (num % i === 0) {
-      result = 'no';
-      break;
-    } else result = 'yes';
-  }
-  return [num, result];
+    for (let i = Math.floor(numFromTask / 2); i >= 2; i -= 1) {
+      if (numFromTask % i === 0) {
+        return false;
+      }
+    } return true;
+  };
+
+  if (isPrime(num)) {
+    result = 'yes';
+  } else result = 'no';
+
+  return [rules, num, result];
 };
 
-export default () => logic(rules, gameData);
+export default () => logic(gameData);
