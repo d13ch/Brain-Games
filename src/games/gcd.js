@@ -6,7 +6,6 @@ const gameData = () => {
   const num1 = randomNum(100, 1);
   const num2 = randomNum(100, 1);
   const task = `${num1} ${num2}`;
-
   let result = 1;
   const gcd = (firstNum, secondNum) => {
     let min = firstNum;
@@ -15,7 +14,6 @@ const gameData = () => {
       min = secondNum;
       max = firstNum;
     }
-
     if (firstNum === secondNum) {
       result = firstNum;
     }
@@ -31,7 +29,6 @@ const gameData = () => {
     }
     return result;
   };
-
   return [rules, task, gcd(num1, num2)];
 };
 
