@@ -1,6 +1,3 @@
-const makeRandomNum = (range = 100, beginOfRange = 1) => {
-  const num = Math.floor(Math.random() * range) + beginOfRange;
-  return num;
-};
+const getRandomNum = (firstNum = 1, range = 100) => Math.floor(Math.random() * range) + firstNum;
 
-export default makeRandomNum;
+export default getRandomNum;

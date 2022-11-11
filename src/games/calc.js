@@ -1,39 +1,31 @@
-import logic from '../index.js';
+import startLogic from '../index.js';
 import randomNum from '../randomNum.js';
 
 const rules = 'What is the result of the expression?';
 
 const calculate = (firstNum, secondNum, operatorFromTask) => {
-  let solution;
   switch (operatorFromTask) {
     case '+':
-      solution = firstNum + secondNum;
-      break;
+      return firstNum + secondNum;
     case '-':
-      solution = firstNum - secondNum;
-      break;
+      return firstNum - secondNum;
     case '*':
-      solution = firstNum * secondNum;
-      break;
+      return firstNum * secondNum;
     default:
-      solution = null;
+      throw new Error('404 Operator not found');
   }
-
-  return solution;
 };
 
-const gameData = () => {
-  const num1 = randomNum(10);
-  const num2 = randomNum(10);
+const getGameData = () => {
+  const num1 = randomNum(1, 10);
+  const num2 = randomNum(1, 10);
   const operators = ['+', '-', '*'];
-  const opIndex = randomNum(operators.length, 0);
-  const operator = operators[opIndex];
-
+  const operatorsIndex = randomNum(0, operators.length);
+  const operator = operators[operatorsIndex];
   const task = `${num1} ${operator} ${num2}`;
-
   const result = calculate(num1, num2, operator);
 
   return [task, result];
 };
 
-export default () => logic(rules, gameData);
+export default () => startLogic(rules, getGameData);

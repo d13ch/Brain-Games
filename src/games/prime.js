@@ -1,4 +1,4 @@
-import logic from '../index.js';
+import startLogic from '../index.js';
 import randomNum from '../randomNum.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -14,11 +14,11 @@ const isPrime = (numFromTask) => {
   } return true;
 };
 
-const gameData = () => {
-  const num = randomNum(98, 2);
+const getGameData = () => {
+  const num = randomNum(2, 98);
   const result = isPrime(num) ? 'yes' : 'no';
 
   return [num, result];
 };
 
-export default () => logic(rules, gameData);
+export default () => startLogic(rules, getGameData);
